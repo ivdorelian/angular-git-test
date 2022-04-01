@@ -1,0 +1,22 @@
+<p>Let's add data to a table!</p>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>First number</th>
+            <th>Second number</th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of data">
+            <td>{{row.first}}</td>
+            <td>{{row.second}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<input #first placeholder="first number">
+<input #second placeholder="second number">
+<button (click)="addNumbers()">add</button>
